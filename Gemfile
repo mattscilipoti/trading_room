@@ -26,6 +26,7 @@ group :test do
   gem 'cucumber-rails'
   gem 'cucumber-passi', :path => '~/develop/gems/cucumber-passi'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
