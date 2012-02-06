@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 group :test do
   gem 'cucumber-rails'
+  gem 'cucumber-passi', :path => '~/develop/gems/cucumber-passi'
   gem 'database_cleaner'
 end
 
