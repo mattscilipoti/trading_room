@@ -9,7 +9,6 @@ Feature: Case Studies
       | Google | GOOG |
 
     When I am viewing Ticker "GOOG"
-    And I press "New Case Study"
+    And I click "New Case Study"
     Then the header should be "GOOG"
-
 

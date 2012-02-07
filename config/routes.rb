@@ -1,5 +1,7 @@
 TradingRoom::Application.routes.draw do
-  resources :tickers
+  resources :tickers do
+    resources :case_studies
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
