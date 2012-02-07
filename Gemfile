@@ -31,11 +31,11 @@ group :test do
 end
 
 group :development, :test do
-  gem 'ruby-debug19',                      :platforms => :mri_19, :require => 'ruby-debug'
+#  gem 'ruby-debug19',                      :platforms => :mri_19, :require => 'ruby-debug'
     # bash < <(curl -L https://raw.github.com/gist/1333785)
     # as of 02/12 must name rubydebug-19 dependencies
-    gem 'linecache19' ,      '>= 0.5.13',  :platforms => :mri_19
-    gem 'ruby-debug-base19', '>= 0.11.26', :platforms => :mri_19
+#    gem 'linecache19' ,      '>= 0.5.13',  :platforms => :mri_19
+#    gem 'ruby-debug-base19', '>= 0.11.26', :platforms => :mri_19
 
 end
 
