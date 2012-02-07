@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ticker: 
+  studied_at: 2012-02-07 17:24:16
+
+two:
+  ticker: 
+  studied_at: 2012-02-07 17:24:16

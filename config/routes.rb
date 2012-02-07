@@ -1,4 +1,6 @@
 TradingRoom::Application.routes.draw do
+  resources :case_studies
+
   resources :tickers do
     resources :case_studies
   end
