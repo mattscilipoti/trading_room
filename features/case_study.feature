@@ -4,11 +4,11 @@ Feature: Case Studies
   Wants to manage case studies for a ticker
 
   Scenario: Creating a case study
-    Given these Assets:
+    Given these Tickers:
       | name | ticker |
       | Google | GOOG |
 
-    When I am showing "GOOG"
+    When I am viewing Ticker "GOOG"
     And I press "New Case Study"
     Then the header should be "GOOG"
 
