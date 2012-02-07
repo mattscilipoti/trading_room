@@ -29,6 +29,14 @@ group :test do
   gem 'factory_girl_rails'
 end
 
+group :development, :test do
+  gem 'ruby-debug19', :platforms => :mri_19,   :require => 'ruby-debug'
+    # as of 02/12 must name rubydebug-19 dependencies
+    gem 'linecache19' ,'>= 0.5.13'
+    gem 'ruby-debug-base19', '>= 0.11.26'
+
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
