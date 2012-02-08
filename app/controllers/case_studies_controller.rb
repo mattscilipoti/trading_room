@@ -24,7 +24,8 @@ class CaseStudiesController < ApplicationController
   # GET /case_studies/new
   # GET /case_studies/new.json
   def new
-    @case_study = CaseStudy.new
+    @ticker = Ticker.find(params[:ticker_id])
+    @case_study = @ticker.case_studies.build
 
     respond_to do |format|
       format.html # new.html.erb

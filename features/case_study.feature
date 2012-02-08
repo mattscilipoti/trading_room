@@ -5,10 +5,10 @@ Feature: Case Studies
 
   Scenario: Creating a case study
     Given these Tickers:
-      | name | ticker |
-      | Google | GOOG |
+      | name   | ticker |
+      | Google | GOOG   |
 
     When I am viewing Ticker "GOOG"
     And I click "New Case Study"
-    Then the header should be "GOOG"
+    Then the headline should include "GOOG"
 

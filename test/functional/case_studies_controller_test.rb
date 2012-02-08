@@ -12,7 +12,7 @@ class CaseStudiesControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, ticker_id: Ticker.create!
     assert_response :success
   end
 

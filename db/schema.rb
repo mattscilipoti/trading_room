@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120131214406) do
+ActiveRecord::Schema.define(:version => 20120207222416) do
+
+  create_table "case_studies", :force => true do |t|
+    t.integer  "ticker_id"
+    t.datetime "studied_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "case_studies", ["ticker_id"], :name => "index_case_studies_on_ticker_id"
 
   create_table "tickers", :force => true do |t|
     t.string   "name"
