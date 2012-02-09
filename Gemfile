@@ -22,6 +22,12 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  gem 'guard'
+  gem 'guard-spin'
+  gem 'spin'
+end
+
 group :test do
   gem 'cucumber-passi', :path => '~/develop/gems/cucumber-passi'
   gem 'cucumber-rails'
