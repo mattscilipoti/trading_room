@@ -1,4 +1,4 @@
-require 'test_helper'
+require 'spec_helper'
 
 describe CaseStudy do
   before do
@@ -6,6 +6,6 @@ describe CaseStudy do
   end
 
   it "should default to :weekly" do
-    @subject.period.must_equal :weekly
+    @subject.period.should == :weekly
   end
 end
