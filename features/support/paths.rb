@@ -7,6 +7,8 @@ module NavigationHelpers
   #
   def path_to(page_name, query_params = {})
     case page_name
+    when /^\/.+$/  # it already is a path
+      page_name
 #    when /^the admin dashboard/i
 #      admin_dashboard_path
 #    when /^Email:(.+) for Project:(.+)$/i

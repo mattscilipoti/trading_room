@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120209212126) do
+ActiveRecord::Schema.define(:version => 20120210032503) do
 
   create_table "case_studies", :force => true do |t|
     t.integer  "ticker_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120209212126) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "period"
+    t.text     "comment"
   end
 
   add_index "case_studies", ["ticker_id"], :name => "index_case_studies_on_ticker_id"
