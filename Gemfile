@@ -6,7 +6,7 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,7 +24,10 @@ gem 'jquery-rails'
 
 group :development do
   gem 'guard'
+#  gem 'guard-minitest'
+#  gem 'guard-rspec'
   gem 'guard-spin'
+  gem 'ruby_gntp'
   gem 'spin'
 end
 
@@ -38,6 +41,7 @@ group :test do
 end
 
 group :development, :test do
+#  gem 'rspec-rails'
 #  gem 'ruby-debug19',                      :platforms => :mri_19, :require => 'ruby-debug'
     # bash < <(curl -L https://raw.github.com/gist/1333785)
     # as of 02/12 must name rubydebug-19 dependencies
