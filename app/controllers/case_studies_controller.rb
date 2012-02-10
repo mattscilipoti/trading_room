@@ -15,7 +15,7 @@ class CaseStudiesController < ApplicationController
   # GET /case_studies/1.json
   def show
     @case_study = CaseStudy.find(params[:id])
-
+    @ticker = @case_study.ticker
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @case_study }

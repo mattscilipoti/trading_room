@@ -1,8 +1,10 @@
-#{@case_study.period.titleize} Case Study for #{@case_study.ticker}
 %p#notice= notice
 
-Comment
-%span#case_study_comment= @case_study.comment
+%h1 #{@case_study.period.titleize} Case Study for #{@case_study.ticker}
+
+%p
+  Comment
+  %span#case_study_comment= @case_study.comment
 
 = link_to 'Edit', edit_case_study_path(@case_study)
 \|
