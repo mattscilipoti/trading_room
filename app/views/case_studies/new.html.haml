@@ -1,4 +1,7 @@
-%h1 New case_study
+%h1
+  New
+  %span#period= @case_study.period.to_s.titleize
+  Case Study for #{@ticker}
 
 = render 'form'
 
