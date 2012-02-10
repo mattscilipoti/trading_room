@@ -1,7 +1,8 @@
 class CaseStudiesController < ApplicationController
-  # GET /case_studies
-  # GET /case_studies.json
+  # GET /ticker/1/case_studies
+  # GET /ticker/1/case_studies.json
   def index
+    assign_ticker
     @case_studies = CaseStudy.all
 
     respond_to do |format|
@@ -21,10 +22,10 @@ class CaseStudiesController < ApplicationController
     end
   end
 
-  # GET /case_studies/new
-  # GET /case_studies/new.json
+  # GET /ticker/1/case_studies/new
+  # GET /ticker/1/case_studies/new.json
   def new
-    @ticker = Ticker.find(params[:ticker_id])
+    assign_ticker
     @case_study = @ticker.case_studies.build
 
     respond_to do |format|
@@ -80,5 +81,12 @@ class CaseStudiesController < ApplicationController
       format.html { redirect_to case_studies_url }
       format.json { head :no_content }
     end
+  end
+
+
+  private
+
+  def assign_ticker
+    @ticker = Ticker.find(params[:ticker_id])
   end
 end

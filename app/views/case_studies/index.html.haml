@@ -2,12 +2,14 @@
 
 %table
   %tr
+    %th Ticker
     %th
     %th
     %th
 
   - @case_studies.each do |case_study|
     %tr
+      %td.ticker= case_study.ticker
       %td= link_to 'Show', case_study
       %td= link_to 'Edit', edit_case_study_path(case_study)
       %td= link_to 'Destroy', case_study, :confirm => 'Are you sure?', :method => :delete

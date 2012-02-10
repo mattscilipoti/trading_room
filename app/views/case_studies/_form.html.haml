@@ -1,4 +1,4 @@
-= simple_form_for @case_study do |f|
+= simple_form_for [@ticker, @case_study] do |f|
   -if @case_study.errors.any?
     #error_explanation
       %h2= "#{pluralize(@case_study.errors.count, "error")} prohibited this case_study from being saved:"

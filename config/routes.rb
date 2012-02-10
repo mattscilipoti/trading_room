@@ -1,8 +1,7 @@
 TradingRoom::Application.routes.draw do
-  resources :case_studies
 
   resources :tickers do
-    resources :case_studies
+    resources :case_studies, :shallow => true
   end
 
   # The priority is based upon order of creation:
