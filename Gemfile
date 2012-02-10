@@ -41,7 +41,7 @@ group :test do
 end
 
 group :development, :test do
-#  gem 'rspec-rails'
+  gem 'rspec-rails'
 #  gem 'ruby-debug19',                      :platforms => :mri_19, :require => 'ruby-debug'
     # bash < <(curl -L https://raw.github.com/gist/1333785)
     # as of 02/12 must name rubydebug-19 dependencies
